@@ -1,8 +1,33 @@
+h1 {
+  font-size: 28px;
+}
+
+.package {
+  margin-top: 20px;
+  background: #eee;
+  padding: 10px;
+
+}
+
+.package-introduction {
+  padding: 20px;
+  margin: 10px 0 20px 0;
+}
+
+.inclusions, .documents-required {
+  padding: 0 5px;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.notes, .benefits {
+  border: solid 1px #eee;
+  padding: 10px;
+}
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
 
 
