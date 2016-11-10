@@ -30,6 +30,32 @@ h4 {
 
 
 
+.jumbotron {
+  position: relative;
+  background: #000 url("http://www.starturcompany.com/wp-content/uploads/2016/07/banner-1.jpg") no-repeat top center;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 500px;
+}
+.jumbotron h1 {
+  width: 600px;
+  font-size: 32px;
+  font-weight: bold;
+}
+#submit-enquiry {
+  position: absolute;
+  width: 250px;
+  top: 5%;
+  right: 20%;
+  background: rgba(128,0,0,0.8);
+  padding: 10px;
+  color: white;
+}
+.starting-from {
+  color: rgb(128,0,0);
+} 
+
 
 
 
