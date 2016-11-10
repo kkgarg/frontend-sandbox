@@ -43,11 +43,8 @@ h4 {
   font-size: 32px;
   font-weight: bold;
 }
-#submit-enquiry {
-  position: absolute;
-  width: 250px;
-  top: 5%;
-  right: 20%;
+.enquiry-form {
+  max-width: 280px;
   background: rgba(128,0,0,0.8);
   padding: 10px;
   color: white;
