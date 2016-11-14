@@ -1,6 +1,6 @@
 .jumbotron {
   position: relative;
-  background: #000 url("http://www.starturcompany.com/wp-content/uploads/2016/07/banner-1.jpg") no-repeat top center;
+  background: #000 url("../img/banner1.jpg") no-repeat top center;
   height: 100%;
   background-size: cover;
   overflow: hidden;
@@ -25,14 +25,18 @@
 }
 
 
+.why-us-wrapper {
+  margin-top: 35px;
+}
 
+.why-us-wrapper h1 {
+  color: rgb(128, 0, 0);
+  font-weight: bold;
+}
 
-
-
-
-
-
-
+.why-us-wrapper li {
+  font-size:18px;
+}
 
 
 h1 {
@@ -45,6 +49,7 @@ h1 {
   padding: 10px;
 
 }
+
 
 .package-introduction {
   padding: 20px;
@@ -64,6 +69,10 @@ h4 {
   padding: 10px;
 }
 
+
+.bg-color-light {
+    background-color: #f7f7f7 !important;
+}
 
 
 
