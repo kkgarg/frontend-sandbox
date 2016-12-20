@@ -1,0 +1,45 @@
+<html><body><pre><script>
+function log(arg) {	document.writeln(arg); }
+
+
+function identity(x) {
+	return x;
+}
+log(identity(2));
+
+
+function identityf(x) {
+	return function() {
+		return x;
+	}
+}
+var three = identityf(3);
+log(three());
+
+
+function addf(x) {
+	return function(y) {
+		return x+y;
+	}
+}
+log(addf(3)(4));
+
+function add(x,y) { return x+y; }
+function sub(x,y) { return x-y; }
+function mul(x,y) { return x*y; }
+log(add(2,3));
+log(sub(2,3));
+log(mul(2,3));
+
+
+function liftf(operation) {
+	return function(x) {
+		return function(y) {
+			return operation(x,y);
+		}
+	}
+}
+log(liftf(add)(3)(4));
+
+
+</script></pre></body></html>
