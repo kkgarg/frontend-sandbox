@@ -41,5 +41,70 @@ function liftf(operation) {
 }
 log(liftf(add)(3)(4));
 
+function curry(operation, x) {
+	return function(y) {
+		return operation(x,y);
+	}
+}
+
+var inc = addf(1);
+var inc = liftf(add)(1);
+var inc = curry(add, 1);
+log(inc(10));
+
+
+
+function twice(operation) {
+	return function(x) {
+		return operation(x,x);
+	}
+}
+var doubl = twice(add);
+log(doubl(11));
+var square = twice(mul);
+log(square(11));
+
+
+function reverse(operation) {
+	return function(x,y) {
+		return operation(y,x);
+	}
+}
+var bus = reverse(sub);
+log(bus(3,2));
+
+
+
+function composeu(f, g) {
+	return function(x) {
+		return g(f(x));
+	}
+}
+log(composeu(doubl, square)(5));
+
+
+function composeb(f, g) {
+	return function(x, y, z) {
+		return g(f(x, y),z);
+	}
+}
+log(composeb(add, mul)(2, 3, 7));
+
+
+function limit(f, call_count) {
+	return function(x, y) {		
+		if (call_count > 0) {
+			call_count -= 1;
+			return f(x, y);
+		}
+		return undefined;
+	}
+}
+
+var add_ltd = limit(add, 2);
+log(add_ltd(3,4));
+log(add_ltd(13,4));
+log(add_ltd(13,5));
+
 
 </script></pre></body></html>
